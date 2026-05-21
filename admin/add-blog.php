@@ -22,8 +22,11 @@ if (isset($_POST['add_blog'])) {
     $upload_path = "../assets/uploads/" . $image;
     move_uploaded_file($tmp_name, $upload_path);
 
-    $query = "INSERT INTO blogs (title, short_description, content, category_id, image)
-              VALUES ('$title', '$short_description', '$content', '$category_id', '$image')";
+    $today = date("Y-m-d");
+
+$query = "INSERT INTO blogs (title, short_description, content, category_id, image, created_at)
+          VALUES ('$title', '$short_description', '$content', '$category_id', '$image', '$today')";
+    
 
     if (mysqli_query($conn, $query)) {
         $message = "Blog added successfully!";

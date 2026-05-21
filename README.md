@@ -97,7 +97,7 @@ Blog-management-system/
 ### 1. Clone Repository
 
 ```bash
-git clone YOUR_GITHUB_REPO_LINK
+git clone https://github.com/barsha20061001/Blog-management-system
 ```
 
 ### 2. Move Project

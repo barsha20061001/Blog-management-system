@@ -1,95 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #f4f6f8;
     margin: 0;
-    padding: 0;
-}
-
-.login-container {
-    width: 350px;
-    margin: 100px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ccc;
-}
-
-.login-container h2 {
-    text-align: center;
-}
-
-.login-container input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    box-sizing: border-box;
-}
-
-.login-container button {
-    width: 100%;
-    padding: 12px;
-    background: #4f46e5;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.error {
-    color: red;
-    text-align: center;
-}
-
-.dashboard {
-    width: 90%;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.dashboard a {
-    display: inline-block;
-    margin: 8px;
-    padding: 8px 12px;
-    background: #4f46e5;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-table {
-    margin-top: 20px;
-    background: white;
-    border-collapse: collapse;
-}
-
-.dashboard input,
-.dashboard textarea,
-.dashboard select {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    box-sizing: border-box;
-}
-
-.dashboard textarea {
-    height: 120px;
-}
-
-.dashboard button {
-    padding: 12px 20px;
-    background: #16a34a;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    color: #222;
 }
 
 .site-header {
-    background: #4f46e5;
+    background: linear-gradient(135deg, #4f46e5, #2563eb);
     color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 40px 15px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.site-header p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.filter-section {
+    width: 90%;
+    margin: 30px auto 10px;
+    display: flex;
+    gap: 15px;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.filter-section input,
+.filter-section select {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 .blog-container {
@@ -102,14 +55,19 @@ table {
 
 .blog-card {
     background: white;
-    border-radius: 10px;
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 6px 18px #ddd;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
 }
 
 .blog-card img {
     width: 100%;
-    height: 200px;
+    height: 210px;
     object-fit: cover;
 }
 
@@ -117,38 +75,51 @@ table {
     padding: 20px;
 }
 
+.blog-content h2 {
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.blog-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
 .category {
     background: #e0e7ff;
     color: #3730a3;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 20px;
     font-size: 13px;
 }
 
 .read-more,
-.back-btn {
+.back-btn,
+.dashboard a {
     display: inline-block;
     margin-top: 15px;
     background: #4f46e5;
     color: white;
     padding: 10px 14px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 .blog-detail {
     width: 80%;
     margin: 40px auto;
     background: white;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px #ddd;
 }
 
 .blog-detail img {
     width: 100%;
-    max-height: 400px;
+    max-height: 420px;
     object-fit: cover;
     margin: 20px 0;
+    border-radius: 10px;
 }
 
 .full-content {
@@ -156,38 +127,102 @@ table {
     font-size: 17px;
 }
 
+.login-container {
+    width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #ccc;
+}
+
+.login-container input,
+.dashboard input,
+.dashboard textarea,
+.dashboard select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+.login-container button,
+.dashboard button {
+    padding: 12px 20px;
+    background: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.dashboard {
+    width: 90%;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+table {
+    margin-top: 20px;
+    background: white;
+    border-collapse: collapse;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.loading,
+.empty-state {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
 @media (max-width: 900px) {
     .blog-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .blog-detail {
+        width: 90%;
+    }
 }
 
 @media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 28px;
+    }
+
+    .filter-section {
+        flex-direction: column;
+    }
+
     .blog-container {
         grid-template-columns: 1fr;
     }
 
     .blog-detail {
-        width: 90%;
+        width: 94%;
         padding: 20px;
     }
-}
 
-.filter-section {
-    width: 90%;
-    margin: 30px auto 10px;
-    display: flex;
-    gap: 15px;
-}
+    .login-container {
+        width: 90%;
+    }
 
-.filter-section input,
-.filter-section select {
-    padding: 12px;
-    width: 100%;
-}
-
-@media (max-width: 600px) {
-    .filter-section {
-        flex-direction: column;
+    table {
+        font-size: 13px;
     }
 }
+
+

@@ -46,7 +46,7 @@ if (mysqli_num_rows($result) > 0) {
 <?php
     }
 } else {
-    echo "<p>No blogs found.</p>";
+    echo "<div class='empty-state'>No blogs found. Try another search or category.</div>";
 }
 ?>
 

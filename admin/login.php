@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 session_start();
 include '../config.php';
 
@@ -28,20 +25,23 @@ if (isset($_POST['login'])) {
 <html>
 <head>
     <title>Admin Login</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
-<h2>Admin Login</h2>
+<div class="login-container">
+    <h2>Admin Login</h2>
 
-<?php if ($error != "") { ?>
-    <p style="color:red;"><?php echo $error; ?></p>
-<?php } ?>
+    <?php if ($error != "") { ?>
+        <p class="error"><?php echo $error; ?></p>
+    <?php } ?>
 
-<form method="POST">
-    <input type="email" name="email" placeholder="Enter Email" required><br><br>
-    <input type="password" name="password" placeholder="Enter Password" required><br><br>
-    <button type="submit" name="login">Login</button>
-</form>
+    <form method="POST">
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <button type="submit" name="login">Login</button>
+    </form>
+</div>
 
 </body>
 </html>

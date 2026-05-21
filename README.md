@@ -16,8 +16,8 @@ https://barshablog.infinityfreeapp.com
 Admin Panel:  
 https://barshablog.infinityfreeapp.com/admin/login.php
 
-Sample Blog Detail Page:  
-https://barshablog.infinityfreeapp.com/blog.php?id=1
+Add Blog Page:  
+https://barshablog.infinityfreeapp.com/admin/add-blog.php
 
 ---
 

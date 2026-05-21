@@ -13,6 +13,9 @@ This project was developed as part of the JobYaari Developer Assessment.
 Frontend Homepage:  
 https://barshablog.infinityfreeapp.com
 
+Admin Dashboard:  
+https://barshablog.infinityfreeapp.com/admin/dashboard.php
+
 Admin Panel:  
 https://barshablog.infinityfreeapp.com/admin/login.php
 

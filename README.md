@@ -10,11 +10,14 @@ This project was developed as part of the JobYaari Developer Assessment.
 
 ## 🚀 Live Website
 
-Frontend:  
+Frontend Homepage:  
 https://barshablog.infinityfreeapp.com
 
 Admin Panel:  
 https://barshablog.infinityfreeapp.com/admin/login.php
+
+Sample Blog Detail Page:  
+https://barshablog.infinityfreeapp.com/blog.php?id=1
 
 ---
 

@@ -10,19 +10,20 @@ The system uses AJAX and jQuery for smooth user experience and real-time filteri
 
 ## 🚀 Live Website
 
-Frontend Homepage:  
+###  Frontend Homepage
 https://barshablog.infinityfreeapp.com
 
-Admin Dashboard:  
-https://barshablog.infinityfreeapp.com/admin/dashboard.php
-
-Admin Panel:  
+###  Admin Login Page
 https://barshablog.infinityfreeapp.com/admin/login.php
 
-Add Blog Page:  
+###  Admin Dashboard
+https://barshablog.infinityfreeapp.com/admin/dashboard.php
+
+###  Add Blog Page
 https://barshablog.infinityfreeapp.com/admin/add-blog.php
 
 ---
+
 
 ##  Admin Credentials
 

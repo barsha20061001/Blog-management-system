@@ -4,7 +4,7 @@ A responsive Blog Management System built using PHP, MySQL, HTML, CSS, JavaScrip
 The project allows admins to manage blogs dynamically through a secure dashboard while users can browse, search, and filter blogs without page reloads.  
 It includes category-wise filtering, date filtering, rich text editing, image uploads, and a fully responsive frontend for both mobile and desktop devices.  
 The system uses AJAX and jQuery for smooth user experience and real-time filtering.  
-This project was developed as part of the JobYaari Developer Assessment.
+
 
 ---
 

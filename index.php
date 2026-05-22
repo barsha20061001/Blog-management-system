@@ -15,6 +15,11 @@ $categories = mysqli_query($conn, "SELECT * FROM categories");
 <header class="site-header">
     <h1> Blogs</h1>
     <p>Latest updates, jobs, results and admit cards</p>
+    <div class="admin-buttons">
+    <a href="admin/login.php">Admin Login</a>
+    <a href="admin/dashboard.php">Admin Dashboard</a>
+    <a href="admin/add-blog.php">Add Blog</a>
+</div>
 </header>
 
 <div class="filter-section">
